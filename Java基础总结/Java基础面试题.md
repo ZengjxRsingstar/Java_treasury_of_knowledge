@@ -19,7 +19,19 @@
 |  float   |  4字节   |   Float   |
 |  double  |  8字节   |  Double   |
 
-# 二、JVM
+# 2、集合类
+
+### HashMap
+
+1.HashMap原理 与Hashtable  (2020bilibi 高频)
+
+2.想做一个Map结构描述一下。（2020bilibi）
+
+3.HashMap实现，扩容机制（探探 & 知乎后端社招面经）
+
+4.ConcurrentHashMap 如何实现线程安全
+
+# 3、JVM
 
 
 
