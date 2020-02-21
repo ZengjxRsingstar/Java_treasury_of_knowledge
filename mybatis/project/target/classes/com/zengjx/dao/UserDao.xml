@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+mapper标签：表示要给某一个映射器进行配置。比如：UserDao
+ namespace：表示给哪个映射器进行配置的，写映射器的全限定类名
+-->
+<mapper namespace="com.zengjx.dao.UserDao">
+
+    <!--
+      mybatis里：把给映射器里每个方法的配置，称为一个statement
+
+      delete标签： 要给一个删除的方法进行配置
+      update标签： 要给一个修改的方法进行配置
+      insert标签： 要给一个添加的方法进行配置
+      select标签： 要给一个查询的方法进行配置
+          id：方法名
+          resultType：结果集的数据要封装成什么对象，写全限定类名
+      -->
+    <select id="queryAll" resultType="com.zengjx.domain.User">
+        select * from user
+    </select>
+
+</mapper>

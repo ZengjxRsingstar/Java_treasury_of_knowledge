@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!--environments：数据库环境配置，default：使用哪个数据库环境作为默认的数据库-->
+    <environments default="self_mybaits">
+        <!--environment：配置一个数据库环境信息-->
+        <environment id="self_mybaits">
+            <!--transactionManager：事务管理方式，固定值JDBC-->
+            <transactionManager type="JDBC"/>
+            <!--dataSource：数据源。type：数据源的类型，值有三种：UNPOOLED，POOLED，JNDI -->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql:///mybatis"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <mapper resource="com/zengjx/dao/UserDao.xml"/>
+    </mappers>
+</configuration>
