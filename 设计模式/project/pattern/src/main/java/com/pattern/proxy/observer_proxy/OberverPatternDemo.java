@@ -1,5 +1,8 @@
 package com.pattern.proxy.observer_proxy;
 
+import java.util.HashMap;
+import java.util.Hashtable;
+
 /**
  * @ClassName HelloController
  * @Description TODO
@@ -23,7 +26,7 @@ public class OberverPatternDemo {
         subject.setState(30);
         subject.notifyAllObserver();
 
-
+        HashMap
 
     }
 }
