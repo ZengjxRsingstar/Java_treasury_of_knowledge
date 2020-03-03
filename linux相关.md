@@ -11,4 +11,4 @@ https://www.cnblogs.com/zjzsky/p/3528526.html
 3.查看cpu 的命令和磁盘IO的命令
 
 4. linux 系统里，一个被打开的文件可以被另一个进程删除吗？  字节
-5. 
+5. linux 的常见命令

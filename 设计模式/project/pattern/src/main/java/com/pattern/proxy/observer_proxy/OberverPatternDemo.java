@@ -26,7 +26,7 @@ public class OberverPatternDemo {
         subject.setState(30);
         subject.notifyAllObserver();
 
-        HashMap
+
 
     }
 }
